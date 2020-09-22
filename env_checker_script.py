@@ -6,7 +6,7 @@ expect_yml = open("environment.yml")
 # Consume all the lines before dependencies.
 while True:
     line = expect_yml.readline()
-    if line == "dependencies:\n":
+    if re.match(rf'dependencies:\s*\n', line):
         line = expect_yml.readline()
         break
 
@@ -33,5 +33,7 @@ for i in dep_list:
 if not invalid:
     print("Your environment is all set!")
 else:
-    print("Missing the following dependencies:")
+    print("---***---\nMissing the following dependencies:")
     print(invalid)
+    print("---***---")
+    print("(Note that if you already have the dependency in your environment, \nit might have different versions than expected in the yml file)")
