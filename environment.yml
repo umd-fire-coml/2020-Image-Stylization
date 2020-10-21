@@ -10,3 +10,5 @@ dependencies:
   - torchvision=0.2.0
   - tqdm=4.45.0
   - jupyterlab
+  - scikit-image
+  - matplotlib
