@@ -1,4 +1,4 @@
-from Loader import CustomDataset
+from Dataset import CustomDataset
 import os
 import torch
 from skimage import io, transform

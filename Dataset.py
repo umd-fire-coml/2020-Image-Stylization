@@ -13,6 +13,7 @@ import torch.nn as nn
 from torch.autograd import Variable
 import numpy as np
 from skimage import io, transform
+from resize_image import resize_image
 
 #the custom dataset
 class CustomDataset(Dataset):
@@ -31,6 +32,7 @@ class CustomDataset(Dataset):
         
         #the order is imageio array, file name
         npa = np.asarray(image)
+        npa = resize_image(image)
         #index[0] of what gets returned is the image np array 
         #index[1] is file name
         return npa, self.files[index]
