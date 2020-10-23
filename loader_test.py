@@ -9,16 +9,6 @@ my_dataset = CustomDataset(path='data')
 dataloader = DataLoader(my_dataset, batch_size=8,
                         shuffle=True)
 
-"""
- - Dataset Obj. name
- - command line inputs for batch_size, num_workers, path
- 
- batch_size:
- - max out GPU memory by increasing batch_size
- - play with batch_sizes as powers of 2, not TOTALLY necessary
-    - if not a power of two, may make training much slower
-"""
-
 #testing the dataset
 print("dataset test")
 #expected is first image dimension and name of the dataset
