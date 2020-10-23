@@ -27,7 +27,7 @@ invalid = []
 for i in dep_list:
     #     re.search(rf'{(i[0]})\s+{i[1]}')
     if not re.search(rf'({i[0]})\s+{i[1]}', curr_env):
-        invalid.append(i);
+        invalid.append(i)
 
 # Print the result
 if not invalid:
