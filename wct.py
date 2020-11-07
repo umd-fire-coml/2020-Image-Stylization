@@ -1,12 +1,4 @@
-from Dataset import CustomDataset
-import os
 import torch
-from skimage import io, transform
-import numpy as np
-import matplotlib.pyplot as plt
-from torch.utils.data import Dataset, DataLoader
-import matplotlib.pyplot as plt
-
 '''
 https://github.com/pietrocarbo/deep-transfer/blob/master/feature_transforms.py
 This is where the code came from
