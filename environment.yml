@@ -7,8 +7,9 @@ dependencies:
   - pillow=6.2.0
   - python=3.6.3
   - pytorch=0.4.1
-  - torchvision=0.2.0
+ - torchvision=0.2.0
   - tqdm=4.45.0
   - jupyterlab
   - scikit-image
   - matplotlib
+  - opencv

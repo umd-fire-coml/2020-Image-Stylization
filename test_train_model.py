@@ -34,6 +34,6 @@ for epoch in range(40):
         optimizer.step()
         
         ### LOGGING
-    print ('Epoch: %03d/%03d | Batch %03d/%03d | Cost: %.4f' 
-                %(epoch+1, epoch, batch_idx, 
-                    len(dataloader), cost))
+        print ('Epoch: %03d/%03d | Batch %03d/%03d | Loss: %.4f' 
+                    %(epoch+1, epoch, batch_idx, 
+                        len(dataloader), cost))
