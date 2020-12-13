@@ -1,0 +1,15 @@
+name: wct
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - numpy
+  - pillow
+  - python
+  - pytorch=1.6.0
+  - torchvision=0.7.0
+  - tqdm
+  - jupyterlab
+  - scikit-image
+  - matplotlib
+  - opencv
